@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>>
+</head>
+<body ng-controller="myController">
+
+
+
+
+    <div class="well col-lg-6" ng-repeat="thing in data.results">
+        <h4><a href="#col1Content" data-toggle="collapse">Collapse</a></h4>
+       <div id="col1Content" class="collapse in">
+           <p>{{thing.repo.id}}</p>
+           <p>{{thing.repo.name}}</p>
+           <p>{{thing.repo.url}}</p>
+
+       </div>
+
+    </div>
+
+    <!--<p>Inside Data: {{data.results.data}}</p>-->
+    <!--<p>My api: {{myAPI.results}}</p>-->
+    <!--<p>Zen API: {{zenAPI.results}}</p>-->
+    <!--<p>{{}}</p>-->
+    <!--<p>{{}}</p>-->
+
+
+
+
+
+</body>
+</html>
